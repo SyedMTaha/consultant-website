@@ -1,14 +1,16 @@
+"use client"
+
 import Header from "@/components/home/header"
-import AboutUs from "@/components/home/about-us"
+import ServicesDetailed from "@/components/home/services-detailed"
 import CTA from "@/components/home/cta"
 import Footer from "@/components/home/footer"
 
-export default function AboutUsPage() {
+export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
-      <AboutUs />
-      <CTA variant="primary" />
+      <ServicesDetailed />
+      <CTA variant="secondary" />
       <Footer />
     </main>
   )

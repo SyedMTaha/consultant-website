@@ -31,34 +31,13 @@ export default function Header() {
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/about-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             About Us
           </Link>
 
-          <div className="relative group">
-            <button className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
-              Services
-              <svg
-                className="w-4 h-4 group-hover:rotate-180 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </button>
-            <div className="absolute left-0 mt-0 w-48 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
-              {serviceLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
+          <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Services
+          </Link>
 
           <Link href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Blogs
@@ -92,39 +71,13 @@ export default function Header() {
       {/* Mobile menu */}
       {isOpen && (
         <nav className="md:hidden border-t border-border bg-card p-4 space-y-2">
-          <Link href="#about" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
+          <Link href="/about-us" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
             About Us
           </Link>
 
-          <div>
-            <button
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
-              className="w-full text-left px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors flex items-center justify-between"
-            >
-              Services
-              <svg
-                className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </button>
-            {isServicesOpen && (
-              <div className="pl-4 space-y-2 mt-2">
-                {serviceLinks.map((link) => (
-                  <Link
-                    key={link.label}
-                    href={link.href}
-                    className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+          <Link href="/services" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
+            Services
+          </Link>
 
           <Link href="#blog" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
             Blogs

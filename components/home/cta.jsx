@@ -5,7 +5,7 @@ export default function CTA({ variant = "primary" }) {
 
   return (
     <section
-      className={`w-full py-20 ${isPrimary ? "bg-primary/10 border-y border-border" : "bg-accent/10 border-y border-border"}`}
+      className={`w-full py-20 ${isPrimary ? "bg-accent/10 border-y border-border" : "bg-accent/10 border-y border-border"}`}
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
         <div className="space-y-4">
