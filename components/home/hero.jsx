@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen pt-24 flex items-center justify-center bg-background overflow-hidden">
@@ -29,15 +31,15 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-start gap-4 pt-4">
-              <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium flex items-center gap-2">
+              <Link href="/contact-us" className="group px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium flex items-center gap-2">
                 Get Free Consultation
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </button>
-              <button className="px-8 py-3 border border-border text-foreground rounded-lg hover:bg-muted transition-colors font-medium">
+              </Link>
+              <Link href="/services" className="px-8 py-3 border border-border text-foreground rounded-lg hover:bg-muted transition-colors font-medium">
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
 

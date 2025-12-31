@@ -18,15 +18,18 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center h-full">
+        <Link href="/" className="flex items-center gap-3 h-full">
           <Image
-            src="/assets/logo/logo-1.svg"
+            src="/assets/logo/logo-1.png"
             alt="MY Consultant & Advisors"
             width={220}
             height={60}
-            className="h-22 w-auto object-contain"
+            className="h-28 w-auto object-contain"
             priority
           />
+          {/* <span className="text-xl font-bold text-foreground hidden sm:block">
+            MY Consultants and Advisors
+          </span> */}
         </Link>
 
         {/* Navigation - Desktop */}
@@ -39,25 +42,25 @@ export default function Header() {
             Services
           </Link>
 
-          <Link href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          {/* <Link href="#blog" className="text-sm text-muted-foreground hover:text-forefground transition-colors">
             Blogs
-          </Link>
+          </Link> */}
 
-          <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/contact-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Contact Us
           </Link>
 
-          <Link href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             FAQ
           </Link>
 
           {/* Keep Get Consultation button */}
-          <button className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium flex items-center gap-2">
+          <Link href="/contact-us" className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium flex items-center gap-2">
             Get Consultation
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </button>
+          </Link>
         </nav>
 
         {/* Mobile menu button */}
@@ -83,21 +86,21 @@ export default function Header() {
             Blogs
           </Link>
 
-          <Link href="#contact" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
+          <Link href="/contact-us" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
             Contact Us
           </Link>
 
-          <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
+          <Link href="/faq" className="block px-4 py-2 text-sm hover:bg-muted rounded-lg transition-colors">
             FAQ
           </Link>
 
           {/* Keep Get Consultation button */}
-          <button className="w-full px-6 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium mt-4 flex items-center justify-center gap-2">
+          <Link href="/contact-us" className="w-full px-6 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium mt-4 flex items-center justify-center gap-2">
             Get Consultation
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </button>
+          </Link>
         </nav>
       )}
     </header>

@@ -25,7 +25,7 @@ export default function CTA({ variant = "primary" }) {
           </button>
         ) : (
           <button className="px-8 py-3 border border-border bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colorsfont-medium inline-block">
-            Call us now: +1 (555) 123-4567
+            Call us now: +971 55 3305 738
           </button>
         )}
       </div>

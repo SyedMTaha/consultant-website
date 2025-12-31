@@ -117,31 +117,16 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6">Our Story</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-6">Who We Are</h2>
               <p className="text-muted-foreground mb-4 text-lg">
-                Founded in 2009, we started with a simple mission: to provide world-class consulting services that drive
-                real business results.
+                MY Consultants and Advisors is a professional services firm delivering comprehensive and expert guidance in Accounting, Bookkeeping, Audit, Taxation, Advisory, Business Setup, Recruitment, and Business Management.
               </p>
               <p className="text-muted-foreground mb-4 text-lg">
-                What began as a small team of passionate consultants has evolved into a thriving firm serving hundreds of
-                clients across various industries. Our growth is a testament to our commitment to excellence and client
-                success.
+                We provide our services with unwavering dedication, strong commitment, and complete clarity, ensuring that clients receive reliable and results-driven support.
               </p>
               <p className="text-muted-foreground mb-6 text-lg">
-                Today, we combine deep industry knowledge with cutting-edge methodologies to deliver innovative solutions
-                that address our clients' most complex business challenges.
+                With extensive experience and a team of qualified professionals, we go beyond traditional practices to deliver high-quality results. We provide end-to-end solutions and ERP implementation services for leading systems such as Oracle, EPMS, Zoho, Odoo, and more. We serve as strategic partners, supporting our clients in operating their businesses across the United Arab Emirates and assisting with company formation in both Free Zones and the Mainland.
               </p>
-              <button className="px-8 py-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors font-semibold inline-flex items-center gap-2">
-                Learn Our Timeline
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </button>
             </div>
             <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-lg p-8 border border-accent/20">
               <div className="space-y-6">
@@ -152,6 +137,44 @@ export default function AboutUs() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section className="w-full py-20 bg-card/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Vision */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-accent text-accent-foreground p-3 rounded-lg">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">Our Vision</h3>
+              </div>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                To be a trusted and leading advisory firm recognized for empowering businesses with clarity, compliance, and strategic insight driving sustainable growth and operational excellence.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-accent text-accent-foreground p-3 rounded-lg">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">Our Mission</h3>
+              </div>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Our mission is to build trust and address critical challenges by delivering high-quality services including Accounting, Bookkeeping, Audit, Taxation, Advisory, Business Setup, Recruitment, and Business Management. We are committed to helping clients and organizations adapt, grow, and achieve sustainable outcomes in an increasingly complex environment.
+              </p>
             </div>
           </div>
         </div>

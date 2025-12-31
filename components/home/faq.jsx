@@ -7,34 +7,44 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "What industries do you specialize in?",
+      question: "Do I need to register for VAT even if my revenue is low?",
       answer:
-        "We have extensive experience across multiple sectors including finance, technology, manufacturing, retail, and healthcare. Our diverse expertise allows us to bring best practices from various industries to your business.",
+        "If your taxable turnover exceeds AED 375,000 annually, VAT registration is mandatory. We also offer voluntary registration for businesses below this threshold.",
     },
     {
-      question: "How long does a typical consulting engagement take?",
+      question: "What is the deadline for Corporate Tax filing in the UAE?",
       answer:
-        "Engagement duration varies based on project scope and complexity. Small strategy sessions may take 4-8 weeks, while comprehensive transformations can take 3-6 months or longer. We customize timelines to your needs.",
+        "The first corporate tax return is due within 9 months after the end of your financial year. We help you stay ahead of deadlines.",
     },
     {
-      question: "What is your pricing structure?",
+      question: "Can I set up a business in the UAE without being a resident?",
       answer:
-        "We offer flexible pricing models including project-based, hourly, and retainer arrangements. We provide transparent quotes upfront with no hidden fees. Contact us for a personalized proposal.",
+        "Yes! Especially in Freezones, 100% foreign ownership is allowed, and we can assist with residency visa processing also.",
     },
     {
-      question: "Do you provide ongoing support after implementation?",
+      question: "What's included in your AED 6,850 business setup plan?",
       answer:
-        "Yes, we offer post-implementation support and monitoring. We can provide ongoing advisory, team training, and course corrections to ensure sustained success and ROI.",
+        "It covers Freezone license, documentation, and establishment card. Additional costs may apply for visas or specific activities.",
     },
     {
-      question: "How do you measure success?",
+      question: "Can I outsource only payroll under HR Services?",
       answer:
-        "We establish clear KPIs and metrics at the outset. Success is measured through improved efficiency, revenue growth, cost savings, market share gains, or other metrics aligned with your business objectives.",
+        "Absolutely. We offer modular HR services, including standalone payroll processing.",
     },
     {
-      question: "Can you work with companies of all sizes?",
+      question: "Do I need a full audit every year?",
       answer:
-        "Absolutely. We work with startups, SMEs, and large enterprises. We scale our approach and team composition based on your organization size and needs.",
+        "Not all businesses require it, but certain Freezones, banks, and investors may mandate annual audits. We guide you case-by-case.",
+    },
+    {
+      question: "Which accounting software do you recommend?",
+      answer:
+        "We work with Zoho Books, Odoo, Oracle, EPMS, QuickBooks etc. We'll recommend the best fit based on your size and needs.",
+    },
+    {
+      question: "Can we outsource our entire Accounts Department to MY Consultants and Advisors?",
+      answer:
+        "Yes, absolutely! We offer full-fledged outsourced accounting solutions, acting as your virtual finance department. From daily bookkeeping to tax filing and financial reporting, our team handles it all — at a fraction of the cost of hiring in-house staff.",
     },
   ]
 
