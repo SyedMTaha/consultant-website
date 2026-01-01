@@ -1,11 +1,11 @@
 "use client"
 
-export default function WhyChooseUs() {
+export default function   WhyChooseUs() {
   const features = [
     { icon: "✓", title: "Expert Team", description: "Over 15+ years of industry experience" },
-    { icon: "✓", title: "Proven Results", description: "Delivered 500+ successful projects" },
+    { icon: "✓", title: "Proven Results", description: "Delivered successful projects" },
     { icon: "✓", title: "Dedicated Support", description: "24/7 client support and consultation" },
-    { icon: "✓", title: "Cost Effective", description: "Transparent pricing with no hidden fees" },
+    { icon: "✓", title: "Cost Effective", description: "Competitive pricing with no hidden fees" },
   ]
 
   return (
@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="flex items-center gap-2 mb-12">
-          <span className="text-xs uppercase tracking-widest text-accent font-medium">Why Choose Us</span>
+          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Why Choose Us</span>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">

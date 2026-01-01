@@ -49,7 +49,7 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="text-center mb-16">
-          <span className="text-xs uppercase tracking-widest text-accent font-medium">Get In Touch</span>
+          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Get In Touch</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Contact Us</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
             Let's discuss how we can help your business grow. Our team of experts is ready to provide you with the best solutions.

@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 export default function AboutUs() {
   const values = [
     {
@@ -100,50 +102,43 @@ export default function AboutUs() {
       <section className="w-full py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="text-xs uppercase tracking-widest text-accent font-semibold">About Us</span>
+            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">About Us</span>
             <h1 className="text-5xl md:text-6xl font-bold mt-4 text-foreground">
-              Your Trusted Consulting Partner
+              MY Consultants and Advisors
             </h1>
             <p className="text-xl text-muted-foreground mt-6">
-              With over 15 years of industry expertise, we help businesses transform, grow, and succeed through strategic
-              consulting and advisory services.
+              Businesses with Clarity, Confidence & Success
             </p>
           </div>
         </div>
       </section>
 
       {/* Our Story Section */}
-      <section className="w-full py-20">
+      <section className="w-full py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6">Who We Are</h2>
-              <p className="text-muted-foreground mb-4 text-lg">
-                MY Consultants and Advisors is a professional services firm delivering comprehensive and expert guidance in Accounting, Bookkeeping, Audit, Taxation, Advisory, Business Setup, Recruitment, and Business Management.
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Who We Are</h2>
+              <p className="text-muted-foreground mb-4 text-lg text-justify">
+                MY Consultants and Advisors is a professional services firm delivering comprehensive and expert guidance in Accounting, Bookkeeping, Audit, Taxation, Advisory, Business Setup, Recruitment, Payroll, and Business Management.
               </p>
-              <p className="text-muted-foreground mb-4 text-lg">
+              <p className="text-muted-foreground mb-4 text-lg text-justify">
                 We provide our services with unwavering dedication, strong commitment, and complete clarity, ensuring that clients receive reliable and results-driven support.
               </p>
-              <p className="text-muted-foreground mb-6 text-lg">
+              <p className="text-muted-foreground mb-6 text-lg text-justify">
                 With extensive experience and a team of qualified professionals, we go beyond traditional practices to deliver high-quality results. We provide end-to-end solutions and ERP implementation services for leading systems such as Oracle, EPMS, Zoho, Odoo, and more. We serve as strategic partners, supporting our clients in operating their businesses across the United Arab Emirates and assisting with company formation in both Free Zones and the Mainland.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-lg p-8 border border-accent/20">
-              <div className="space-y-6">
-                {expertise.map((item, index) => (
-                  <div key={index} className="border-b border-border pb-6 last:border-b-0">
-                    <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">{item.label}</p>
-                    <p className="text-4xl font-bold text-accent">{item.value}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-lg border border-accent/20 aspect-square flex items-center justify-center">
+              {/* Image will be added here */}
+              <p className="text-muted-foreground text-center">Image placeholder</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="w-full py-20 bg-card/30">
+      <section className="w-full py-12 bg-card/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Vision */}
@@ -157,7 +152,7 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">Our Vision</h3>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-muted-foreground text-lg leading-relaxed text-justify">
                 To be a trusted and leading advisory firm recognized for empowering businesses with clarity, compliance, and strategic insight driving sustainable growth and operational excellence.
               </p>
             </div>
@@ -172,7 +167,7 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">Our Mission</h3>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-muted-foreground text-lg leading-relaxed text-justify">
                 Our mission is to build trust and address critical challenges by delivering high-quality services including Accounting, Bookkeeping, Audit, Taxation, Advisory, Business Setup, Recruitment, and Business Management. We are committed to helping clients and organizations adapt, grow, and achieve sustainable outcomes in an increasingly complex environment.
               </p>
             </div>
@@ -180,39 +175,111 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Our Values Section */}
-      <section className="w-full py-20 bg-card/30">
+      {/* Core Values Section */}
+      <section className="w-full py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 text-center">
-            <span className="text-xs uppercase tracking-widest text-accent font-semibold">Core Values</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">What We Stand For</h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Our values form the foundation of everything we do and guide our decisions every day
-            </p>
+          {/* Section Header and Image */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Our Values</h2>
+
+              {/* Introductory Text */}
+              <div className="space-y-6">
+                <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+                  At MY Consultants and Advisors, our Values set us apart. They are the principles that unite us, strengthen our culture, and inspire us to bring our best to every engagement. When we live our Values consistently, we build trust within our team, with our clients, and across every relationship we cultivate.
+                </p>
+                <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+                  Our Values define who we are and what it means to be part of MY Consultants and Advisors. They form the foundation of every decision we make and every action we take. They guide how we collaborate, how we serve our clients, and how we uphold our responsibilities to our stakeholders and to each other.
+                </p>
+                <p className="text-muted-foreground text-lg leading-relaxed text-justify">
+                  Each of our five Values is designed to work alongside the others. They bind us together, across our different backgrounds and cultures and are common to each of us.
+                </p>
+              </div>
+            </div>
+
+            {/* Values Image Placeholder */}
+            <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-lg border border-accent/20 aspect-square flex items-center justify-center">
+              {/* Image will be added here */}
+              <p className="text-muted-foreground text-center">Values image placeholder</p>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300 text-center group"
-              >
-                <div className="inline-block bg-accent text-accent-foreground p-4 rounded-lg mb-4 group-hover:scale-110 transition-transform">
-                  {value.icon}
+          {/* Values Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Value 1: Integrity */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent text-accent-foreground w-14 h-14 rounded-lg text-2xl font-bold flex-shrink-0 flex items-center justify-center">
+                  1
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{value.title}</h3>
-                <p className="text-muted-foreground">{value.description}</p>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Integrity</h3>
+                  <p className="text-muted-foreground text-lg">We do what is right.</p>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Value 2: Excellence */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent text-accent-foreground w-14 h-14 rounded-lg text-2xl font-bold flex-shrink-0 flex items-center justify-center">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Excellence</h3>
+                  <p className="text-muted-foreground text-lg">We never stop learning and improving.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Value 3: Courage */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent text-accent-foreground w-14 h-14 rounded-lg text-2xl font-bold flex-shrink-0 flex items-center justify-center">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Courage</h3>
+                  <p className="text-muted-foreground text-lg">We think and act boldly.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Value 4: Together */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent text-accent-foreground w-14 h-14 rounded-lg text-2xl font-bold flex-shrink-0 flex items-center justify-center">
+                  4
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Together</h3>
+                  <p className="text-muted-foreground text-lg">We respect each other and draw strength from our differences.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Value 5: For Better */}
+            <div className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-accent transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-accent text-accent-foreground w-14 h-14 rounded-lg text-2xl font-bold flex-shrink-0 flex items-center justify-center">
+                  5
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">For Better</h3>
+                  <p className="text-muted-foreground text-lg">We do what matters.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+     
       {/* Our Expertise Section */}
       <section className="w-full py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <span className="text-xs uppercase tracking-widest text-accent font-semibold">Areas of Focus</span>
+            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Areas of Focus</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Our Expertise</h2>
           </div>
 
@@ -317,7 +384,7 @@ export default function AboutUs() {
       <section className="w-full py-20 bg-card/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <span className="text-xs uppercase tracking-widest text-accent font-semibold">Meet Our Leaders</span>
+            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Meet Our Leaders</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Our Experienced Team</h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
               Our team consists of industry experts with decades of combined experience
@@ -345,7 +412,7 @@ export default function AboutUs() {
       <section className="w-full py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <span className="text-xs uppercase tracking-widest text-accent font-semibold">Why Partner With Us</span>
+            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Why Partner With Us</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Why Choose Us</h2>
           </div>
 
@@ -403,19 +470,18 @@ export default function AboutUs() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+      <section className="w-full py-20 bg-accent/10 border-y border-accent/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Let our team of expert consultants help you achieve your business goals and unlock new opportunities for
-            growth.
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Ready to Transform Your Business?</h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Let our team of expert consultants help you achieve your business goals and unlock new opportunities for growth.
           </p>
-          <button className="px-8 py-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/90 transition-colors font-semibold inline-flex items-center gap-2">
-            Schedule Your Free Consultation
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <Link href="https://wa.me/971553305738" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent/90 transition-all duration-300 font-semibold inline-flex items-center gap-2 group">
+            Schedule Your Consultation Today
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </button>
+          </Link>
         </div>
       </section>
     </section>

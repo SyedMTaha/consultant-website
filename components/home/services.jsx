@@ -137,7 +137,7 @@ export default function Services() {
         {/* Section header */}
         <div className="flex items-center justify-between mb-12">
           <div>
-            <span className="text-xs uppercase tracking-widest text-accent font-medium">Our Services</span>
+            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Our Services</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 text-balance">Services We Provide</h2>
           </div>
 

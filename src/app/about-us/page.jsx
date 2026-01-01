@@ -8,7 +8,7 @@ export default function AboutUsPage() {
     <main className="min-h-screen bg-background">
       <Header />
       <AboutUs />
-      <CTA variant="primary" />
+      {/* <CTA variant="primary" /> */}
       <Footer />
     </main>
   )

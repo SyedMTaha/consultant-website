@@ -10,7 +10,7 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-background">
       <Header />
       <ServicesDetailed />
-      <CTA variant="secondary" />
+      {/* <CTA variant="secondary" /> */}
       <Footer />
     </main>
   )

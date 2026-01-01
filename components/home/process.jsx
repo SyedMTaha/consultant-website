@@ -29,7 +29,7 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-16 text-center">
-          <span className="text-xs uppercase tracking-widest text-accent font-medium">Our Process</span>
+          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Our Process</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">How We Help You Succeed</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Our proven 4-step process ensures strategic alignment and successful business transformation.

@@ -18,13 +18,13 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 h-full">
+        <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/assets/logo/logo-1.png"
+            src="/assets/logo/logo-4.svg"
             alt="MY Consultant & Advisors"
             width={220}
             height={60}
-            className="h-28 w-auto object-contain"
+            className="h-64 w-auto object-contain"
             priority
           />
           {/* <span className="text-xl font-bold text-foreground hidden sm:block">
@@ -34,6 +34,10 @@ export default function Header() {
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center gap-8">
+           <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Home
+          </Link>
+
           <Link href="/about-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             About Us
           </Link>

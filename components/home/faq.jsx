@@ -53,7 +53,7 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
-          <span className="text-xs uppercase tracking-widest text-accent font-medium">FAQ</span>
+          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">FAQ</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">Common Questions</h2>
         </div>
 
