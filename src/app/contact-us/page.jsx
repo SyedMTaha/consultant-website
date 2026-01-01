@@ -11,7 +11,9 @@ export default function ContactUsPage() {
   return (
     <main className="w-full">
       <Header />
-      <ContactForm />
+      <div className="pt-16">
+        <ContactForm />
+      </div>
       <Footer />
     </main>
   )

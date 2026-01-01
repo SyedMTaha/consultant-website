@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/services" className="text-white/80 hover:text-[#19A3D4] transition-colors">
-                  Accounting
+                  Accounting & Bookkeeping
                 </Link>
               </li>
               <li>
@@ -147,7 +147,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 text-[#19A3D4] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@myconsultantsandadvisors.com" className="text-white/90 hover:text-[#19A3D4] transition-colors">
+                <a href="mailto:myconsultantsandadvisors@gmail.com" className="text-white/90 hover:text-[#19A3D4] transition-colors">
                   info@myconsultantsandadvisors.com
                 </a>
               </li>

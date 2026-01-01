@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full h-full flex flex-col justify-center items-center text-center">
         <div className="space-y-4 animate-fadeInUp">
-          <p className="text-3xl text-white font-light">MY Consultants & Advisors</p>
+          <p className="text-3xl text-white font-light">MY Consultants and Advisors</p>
           <p className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">WHERE</p>
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight">
             <span className="inline-block animate-wordSlide" style={{ animationDelay: "0.2s" }}>

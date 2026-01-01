@@ -26,37 +26,57 @@ export default function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitStatus("success")
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        service: "",
-        message: ""
-      })
+    try {
+      // Send email using mailto (opens default email client)
+      const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`)
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Phone: ${formData.phone}\n` +
+        `Company: ${formData.company || 'N/A'}\n` +
+        `Service: ${formData.service}\n\n` +
+        `Message:\n${formData.message}`
+      )
       
-      // Reset success message after 5 seconds
+      // Open email client with pre-filled data
+      window.location.href = `mailto:myconsultantsandadvisors@gmail.com?subject=${subject}&body=${body}`
+      
+      // Show success message
+      setTimeout(() => {
+        setIsSubmitting(false)
+        setSubmitStatus("success")
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          message: ""
+        })
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setSubmitStatus(null), 5000)
+      }, 1000)
+    } catch (error) {
+      setIsSubmitting(false)
+      setSubmitStatus("error")
       setTimeout(() => setSubmitStatus(null), 5000)
-    }, 1500)
+    }
   }
 
   return (
-    <div className="pt-24 pb-20 bg-gradient-to-br from-white via-blue-50/30 to-white">
+    <div className="pt-20 pb-20 bg-gradient-to-br from-white via-blue-50/30 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Get In Touch</span>
+          <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">Get In Touch</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Contact Us</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
             Let's discuss how we can help your business grow. Our team of experts is ready to provide you with the best solutions.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12 lg:items-start">
           {/* Contact Information */}
           <div className="lg:col-span-1 space-y-8">
             {/* Contact Details Card */}
@@ -141,11 +161,28 @@ export default function ContactForm() {
                 </div>
               </div>
             </div>
+
+            {/* Map Section */}
+            <div className="bg-card border border-border rounded-lg overflow-hidden">
+              <h2 className="text-xl font-bold text-foreground p-6 pb-4">Our Location</h2>
+              <div className="w-full h-64">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.532421821164!2d55.4585985!3d25.3199091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f26195b7e6b%3A0xc0f6d4eb509bdf75!2sSPC%20Free%20Zone%20-%20Business%20Setup%20In%20Sharjah%2C%20UAE!5e0!3m2!1sen!2s!4v1767290009349!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="MY Consultants & Advisors Location"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-card border border-border rounded-lg p-8">
+            <div className="bg-card border border-border rounded-lg p-8 h-full flex flex-col">
               <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
               
               {submitStatus === "success" && (
@@ -274,7 +311,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed group"
                 >
                   {isSubmitting ? (
                     <>
@@ -287,7 +324,7 @@ export default function ContactForm() {
                   ) : (
                     <>
                       Send Message
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     </>

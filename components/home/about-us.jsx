@@ -71,42 +71,45 @@ export default function AboutUs() {
 
   const teamMembers = [
     {
-      name: "Sarah Johnson",
-      role: "Chief Consulting Officer",
-      specialization: "Business Strategy",
-      image: "👔",
+      name: "M. Siddique",
+      role: "Managing Partner",
+      specialization: "Corporate strategy, client advisory, and growth leadership",
+      bgColor: "bg-gradient-to-br from-primary to-primary/70",
     },
     {
-      name: "Michael Chen",
+      name: "Muhammad",
       role: "Lead Tax Advisor",
-      specialization: "Tax Planning & Compliance",
-      image: "💼",
+      specialization: "Tax planning, compliance frameworks, and cross-border advisory",
+      bgColor: "bg-gradient-to-br from-primary to-primary/70",
     },
     {
-      name: "Emma Williams",
-      role: "Financial Advisory Head",
-      specialization: "Financial Management",
-      image: "📊",
-    },
-    {
-      name: "David Martinez",
-      role: "Operations Director",
-      specialization: "Process Optimization",
-      image: "⚙️",
+      name: "Taha",
+      role: "Product Development Lead",
+      specialization: "Digital product strategy, UX delivery, and scalable platform builds",
+      bgColor: "bg-gradient-to-br from-primary to-primary/70",
     },
   ]
 
   return (
     <section className="w-full bg-background">
       {/* Hero Section */}
-      <section className="w-full py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-accent/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative w-full min-h-screen pt-24 flex items-center justify-center overflow-hidden border-b border-accent/20">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/assets/about/about-us-bg.jpeg')" }}
+        >
+          {/* Dark gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/35 to-black/30" />
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">About Us</span>
-            <h1 className="text-5xl md:text-6xl font-bold mt-4 text-foreground">
+            <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">About Us</span>
+            <h1 className="text-5xl md:text-6xl font-bold mt-4 text-white">
               MY Consultants and Advisors
             </h1>
-            <p className="text-xl text-muted-foreground mt-6">
+            <p className="text-xl text-white/90 mt-6">
               Businesses with Clarity, Confidence & Success
             </p>
           </div>
@@ -129,9 +132,12 @@ export default function AboutUs() {
                 With extensive experience and a team of qualified professionals, we go beyond traditional practices to deliver high-quality results. We provide end-to-end solutions and ERP implementation services for leading systems such as Oracle, EPMS, Zoho, Odoo, and more. We serve as strategic partners, supporting our clients in operating their businesses across the United Arab Emirates and assisting with company formation in both Free Zones and the Mainland.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-lg border border-accent/20 aspect-square flex items-center justify-center">
-              {/* Image will be added here */}
-              <p className="text-muted-foreground text-center">Image placeholder</p>
+            <div className="rounded-lg border border-accent/20 overflow-hidden aspect-square">
+              <img 
+                src="/assets/about/who-we-are-2.jpg" 
+                alt="Who We Are" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -175,7 +181,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Core Values Section */}
+      {/* Values Section */}
       <section className="w-full py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header and Image */}
@@ -198,9 +204,12 @@ export default function AboutUs() {
             </div>
 
             {/* Values Image Placeholder */}
-            <div className="bg-gradient-to-br from-accent/20 to-primary/10 rounded-lg border border-accent/20 aspect-square flex items-center justify-center">
-              {/* Image will be added here */}
-              <p className="text-muted-foreground text-center">Values image placeholder</p>
+            <div className="rounded-lg border border-accent/20 overflow-hidden aspect-square">
+              <img 
+                src="/assets/about/our-value-4.avif" 
+                alt="Our Values" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -336,7 +345,7 @@ export default function AboutUs() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={1.5}
-                      d="M17 20h5v-2a3 3 0 00-5.856-1.487M15 10a3 3 0 11-6 0 3 3 0 016 0z"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                     />
                   </svg>
                 ),
@@ -364,7 +373,7 @@ export default function AboutUs() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={1.5}
-                      d="M9 3v2m6-2v2M9 5h6m-6 0a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2V7a2 2 0 00-2-2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
                     />
                   </svg>
                 ),
@@ -391,12 +400,10 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300">
-                <div className="bg-gradient-to-r from-primary to-primary/70 h-24 flex items-center justify-center text-5xl">
-                  {member.image}
-                </div>
+                <div className={`h-40 w-full ${member.bgColor}`} />
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-foreground">{member.name}</h3>
                   <p className="text-accent text-sm font-semibold mb-2">{member.role}</p>
@@ -421,11 +428,11 @@ export default function AboutUs() {
               {
                 title: "Proven Track Record",
                 description:
-                  "500+ satisfied clients and a 95% client retention rate speak to our commitment to excellence",
+                  "Satisfied clients and a 95% client retention rate speak to our commitment to excellence",
               },
               {
                 title: "Expert Team",
-                description: "50+ experienced consultants with diverse industry backgrounds and specialized expertise",
+                description: "Experienced consultants with diverse industry backgrounds and specialized expertise",
               },
               {
                 title: "Customized Solutions",

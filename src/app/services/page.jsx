@@ -9,7 +9,9 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
-      <ServicesDetailed />
+      <div className="pt-16">
+        <ServicesDetailed />
+      </div>
       {/* <CTA variant="secondary" /> */}
       <Footer />
     </main>

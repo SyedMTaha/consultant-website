@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { MdLaptop } from "react-icons/md"
 
 export default function FAQWithBenefits() {
   const [openIndex, setOpenIndex] = useState(null)
@@ -53,7 +54,7 @@ export default function FAQWithBenefits() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">FAQ</span>
+          <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">FAQ</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">Common Questions</h2>
         </div>
 
@@ -91,7 +92,7 @@ export default function FAQWithBenefits() {
       {/* Benefits Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="text-center mb-12">
-          <span className="text-xs uppercase tracking-widest text-accent font-medium">Why Choose Us</span>
+          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">Why Choose Us</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">Benefits of Outsourcing Your Accounting Department</h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
             Discover how outsourcing your accounting functions can transform your business operations and drive growth
@@ -108,16 +109,22 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Cost Savings</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>No need to hire full-time staff (Accountant, Finance Manager, etc.)</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Avoid visa costs, health insurance, gratuity, and payroll expenses</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Pay only for what you need — monthly or project-based</span>
               </li>
             </ul>
@@ -132,16 +139,22 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Expertise on Demand</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Access to a team of qualified accountants, auditors, and tax experts</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Stay updated with UAE laws, FTA guidelines, and tax regulations</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Avoid costly errors and penalties due to inexperience</span>
               </li>
             </ul>
@@ -156,16 +169,22 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Scalability & Flexibility</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Easily scale services up or down as your business grows</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Choose from daily, weekly, or monthly reporting cycles</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Switch from basic bookkeeping to full CFO-level support as needed</span>
               </li>
             </ul>
@@ -180,16 +199,22 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Better Compliance</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Accurate VAT and Corporate Tax filing</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>FTA-compliant record keeping</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Timely submissions avoid late penalties and audits</span>
               </li>
             </ul>
@@ -205,12 +230,16 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Focus on Core Business</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Free up your time and energy to focus on growth and operations</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Let finance and reporting be handled by professionals in the background</span>
               </li>
             </ul>
@@ -219,22 +248,26 @@ export default function FAQWithBenefits() {
           {/* Benefit 6: Access to Modern Tools */}
           <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent transition-all duration-300">
             <div className="bg-accent text-accent-foreground p-3 rounded-lg w-fit mb-4">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 5h6m-6 0a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2V7a2 2 0 00-2-2" />
-              </svg>
+              <MdLaptop className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Access to Modern Tools & Software</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>We use cloud-based accounting systems like Zoho Books, Oracle Fusion, Odoo</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Real-time access to reports and dashboards</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Automation reduces errors and improves efficiency</span>
               </li>
             </ul>
@@ -249,12 +282,16 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Confidentiality & Data Security</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Professional-grade security protocols for sensitive data</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>NDA and service-level agreements to ensure trust and transparency</span>
               </li>
             </ul>
@@ -269,16 +306,22 @@ export default function FAQWithBenefits() {
             </div>
             <h3 className="text-xl font-bold text-foreground mb-3">Strategic Financial Insights</h3>
             <ul className="text-muted-foreground space-y-2 text-sm">
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Monthly MIS reports to support smart decision-making</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Budgeting, forecasting, and cash flow analysis</span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-accent mt-1">•</span>
+              <li className="flex gap-2 items-start">
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
                 <span>Business performance dashboards</span>
               </li>
             </ul>

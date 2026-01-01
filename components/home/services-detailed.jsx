@@ -7,9 +7,9 @@ export default function ServicesDetailed() {
   const services = [
     {
       id: 1,
-      title: "Accounting",
+      title: "Accounting & Bookkeeping",
       description: "We provide a full range of accounting services to ensure your financial records are accurate, compliant, and up to date. From daily bookkeeping to comprehensive financial reporting.",
-      image: "/assets/services/accounting.jpg",
+      image: "/assets/services/accounting-service.jpeg",
       includes: [
         "Transactional Accounting: Recording daily business transactions like sales, purchases, receipts, and payments",
         "Month-End Closing: Reconciling accounts, accruals, month end adjustments, depreciation, generating financial statements",
@@ -76,7 +76,7 @@ export default function ServicesDetailed() {
       id: 7,
       title: "Accounting Software Solutions",
       description: "We assist with selection, setup, integration, and training for industry-leading accounting software, enabling efficient financial management and automation.",
-      image: "/assets/services/software.jpg",
+      image: "/assets/services/accounting-software-service.jpeg",
       includes: [
         "QuickBooks: Ideal for small to mid-sized businesses with comprehensive accounting features",
         "Zoho Books: Cloud-based, scalable, and user-friendly accounting solution",
@@ -108,6 +108,19 @@ export default function ServicesDetailed() {
         "Finance Analytics: Advanced reporting and analytics to drive better financial decisions",
         "Cost Optimization: Identify and implement cost-saving opportunities through technology"
       ]
+    },
+    {
+      id: 10,
+      title: "Product Design and Development",
+      description:
+        "We help businesses design and build modern digital products that improve customer engagement, streamline internal workflows, and support long-term growth through scalable, user-centric systems.",
+      image: "/assets/services/product-service.webp",
+      includes: [
+        "Web Application Development: Design and development of secure, scalable web platforms tailored to business operations, client interaction, and internal process management.",
+        "Mobile Application Development: Custom Android and iOS applications built to enhance accessibility, automate processes, and extend business services to mobile users.",
+        "UI/UX & Product Design: Research-driven interface and experience design focused on usability, clarity, and conversion across web and mobile platforms.",
+        "Custom Business Platforms: Development of tailored internal systems such as dashboards, portals, and workflow tools aligned with organizational needs"
+      ]
     }
   ]
 
@@ -117,7 +130,7 @@ export default function ServicesDetailed() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-16 text-center">
-          <span className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-primary text-sm uppercase tracking-widest font-semibold">OUR SERVICES</span>
+          <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">OUR SERVICES</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Comprehensive Business Solutions</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
             Professional consulting services tailored to drive growth and ensure compliance for your business in the UAE

@@ -3,9 +3,10 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { MdPhone } from "react-icons/md"
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false) 
   const [isServicesOpen, setIsServicesOpen] = useState(false)
 
   const serviceLinks = [
@@ -20,11 +21,11 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/assets/logo/logo-4.svg"
+            src="/assets/logo/logo-5.svg"
             alt="MY Consultant & Advisors"
             width={220}
             height={60}
-            className="h-64 w-auto object-contain"
+            className="h-68 w-auto object-contain" 
             priority
           />
           {/* <span className="text-xl font-bold text-foreground hidden sm:block">
@@ -58,13 +59,16 @@ export default function Header() {
             FAQ
           </Link>
 
-          {/* Keep Get Consultation button */}
-          <Link href="/contact-us" className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium flex items-center gap-2">
-            Get Consultation
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+          {/* Call Now button */}
+          <a href="tel:+971588438475" className="flex items-center gap-3 px-4 py-2 hover:opacity-80 transition-opacity group">
+            <div className="w-11 h-11 bg-primary rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 shadow-lg group-hover:shadow-xl group-hover:transition-all group-hover:duration-300 animate-popDiv">
+              <MdPhone className="w-6 h-6 text-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-medium text-foreground">Call Now</span>
+              <span className="text-sm font-bold text-primary">+971 58 843 8475</span>
+            </div>
+          </a>
         </nav>
 
         {/* Mobile menu button */}
@@ -98,15 +102,83 @@ export default function Header() {
             FAQ
           </Link>
 
-          {/* Keep Get Consultation button */}
-          <Link href="/contact-us" className="w-full px-6 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium mt-4 flex items-center justify-center gap-2">
-            Get Consultation
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+          {/* Call Now button */}
+          <a href="tel:+971588438475" className="w-full px-4 py-3 flex items-center gap-3 hover:opacity-80 transition-opacity group border border-border rounded-lg relative">
+            {/* Ripple circles */}
+            <div className="absolute w-11 h-11 rounded-full border border-primary/30 animate-ripple1" style={{ left: '28px', top: '50%', transform: 'translate(-50%, -50%)' }} />
+            <div className="absolute w-11 h-11 rounded-full border border-primary/30 animate-ripple2" style={{ left: '28px', top: '50%', transform: 'translate(-50%, -50%)' }} />
+            <div className="absolute w-11 h-11 rounded-full border border-primary/30 animate-ripple3" style={{ left: '28px', top: '50%', transform: 'translate(-50%, -50%)' }} />
+            
+            {/* Main icon circle */}
+            <div className="w-11 h-11 bg-primary rounded-full flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl relative z-10">
+              <MdPhone className="w-6 h-6 text-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-medium text-foreground">Call Now</span>
+              <span className="text-sm font-bold text-primary">+971 58 843 8475</span>
+            </div>
+          </a>
         </nav>
       )}
+
+      <style jsx>{`
+        @keyframes ripple1 {
+          0% {
+            width: 2.75rem;
+            height: 2.75rem;
+            opacity: 1;
+          }
+          100% {
+            width: 5rem;
+            height: 5rem;
+            opacity: 0;
+          }
+        }
+
+        @keyframes ripple2 {
+          0% {
+            width: 2.75rem;
+            height: 2.75rem;
+            opacity: 0;
+          }
+          25% {
+            opacity: 1;
+          }
+          100% {
+            width: 5rem;
+            height: 5rem;
+            opacity: 0;
+          }
+        }
+
+        @keyframes ripple3 {
+          0% {
+            width: 2.75rem;
+            height: 2.75rem;
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            width: 5rem;
+            height: 5rem;
+            opacity: 0;
+          }
+        }
+
+        .animate-ripple1 {
+          animation: ripple1 2s ease-out infinite;
+        }
+
+        .animate-ripple2 {
+          animation: ripple2 2s ease-out infinite;
+        }
+
+        .animate-ripple3 {
+          animation: ripple3 2s ease-out infinite;
+        }
+      `}</style>
     </header>
   )
 }

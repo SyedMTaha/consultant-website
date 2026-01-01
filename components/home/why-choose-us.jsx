@@ -1,11 +1,13 @@
 "use client"
 
+import { MdCheck } from "react-icons/md"
+
 export default function   WhyChooseUs() {
   const features = [
-    { icon: "✓", title: "Expert Team", description: "Over 15+ years of industry experience" },
-    { icon: "✓", title: "Proven Results", description: "Delivered successful projects" },
-    { icon: "✓", title: "Dedicated Support", description: "24/7 client support and consultation" },
-    { icon: "✓", title: "Cost Effective", description: "Competitive pricing with no hidden fees" },
+    { title: "Expert Team", description: "Over 15+ years of industry experience" },
+    { title: "Proven Results", description: "Delivered successful projects" },
+    { title: "Dedicated Support", description: "24/7 client support and consultation" },
+    { title: "Cost Effective", description: "Competitive pricing with no hidden fees" },
   ]
 
   return (
@@ -34,8 +36,8 @@ export default function   WhyChooseUs() {
               {features.map((feature, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/20 text-primary text-xl font-bold">
-                      {feature.icon}
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/10 border border-accent/30 text-accent">
+                      <MdCheck className="w-6 h-6" />
                     </div>
                   </div>
                   <div>
@@ -51,12 +53,10 @@ export default function   WhyChooseUs() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-lg border border-border/50 bg-white">
               <img
-                src="/assets/home/image-3.svg"
+                src="/assets/home/business-trust.jpeg"
                 alt="Team working together"
                 className="w-full h-full object-cover aspect-square"
               />
-              <div className="absolute top-6 right-6 w-16 h-16 border-2 border-accent rounded-full opacity-50" />
-              <div className="absolute bottom-6 left-6 w-12 h-12 bg-accent/20 rounded-full" />
             </div>
           </div>
         </div>
