@@ -129,13 +129,31 @@ export default function ServicesDetailed() {
     <section className="w-full py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center space-y-4 animate-fadeInUp">
           <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">OUR SERVICES</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-4 text-foreground">Comprehensive Business Solutions</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
             Professional consulting services tailored to drive growth and ensure compliance for your business in the UAE
           </p>
         </div>
+
+        {/* CSS Animations */}
+        <style jsx>{`
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+          }
+        `}</style>
 
         {/* Services grid - 2 columns on tablet, 3 on desktop */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

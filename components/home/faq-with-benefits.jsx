@@ -50,10 +50,28 @@ export default function FAQWithBenefits() {
   ]
 
   return (
+    <>
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes faqFadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fadeInUp {
+          animation: faqFadeInUp 0.8s ease-out 0.2s backwards;
+        }
+      `}} />
+      
     <section className="w-full py-20 bg-card/50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 space-y-4 animate-fadeInUp">
           <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">FAQ</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4">Common Questions</h2>
         </div>
@@ -329,5 +347,6 @@ export default function FAQWithBenefits() {
         </div>
       </div>
     </section>
+    </>
   )
 }

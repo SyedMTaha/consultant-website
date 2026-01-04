@@ -21,29 +21,9 @@ export default function Hero() {
           <p className="text-3xl text-white font-light">MY Consultants and Advisors</p>
           <p className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">WHERE</p>
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-            <span className="inline-block animate-wordSlide" style={{ animationDelay: "0.2s" }}>
-              Businesses
-            </span>
-            {" "}
-            <span className="inline-block animate-wordSlide" style={{ animationDelay: "0.4s" }}>
-              Meet
-            </span>
-            {" "}
-            <span className="inline-block animate-wordSlide" style={{ animationDelay: "0.6s" }}>
-              Clarity,
-            </span>
+            Businesses Meet Clarity,
             <br />
-            <span className="inline-block animate-wordSlide" style={{ animationDelay: "0.8s" }}>
-              Confidence
-            </span>
-            {" "}
-            <span className="inline-block animate-wordSlide" style={{ animationDelay: "1s" }}>
-              &
-            </span>
-            {" "}
-            <span className="inline-block animate-wordSlide" style={{ animationDelay: "1.2s" }}>
-              Success
-            </span>
+            Confidence & Success
           </h1>
         </div>
       </div>

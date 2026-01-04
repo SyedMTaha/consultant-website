@@ -104,7 +104,7 @@ export default function AboutUs() {
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center space-y-4 animate-fadeInUp">
             <span className="inline-block px-4 py-2 bg-primary border border-accent/30 rounded-full text-white text-sm uppercase tracking-widest font-semibold">About Us</span>
             <h1 className="text-5xl md:text-6xl font-bold mt-4 text-white">
               MY Consultants and Advisors
@@ -114,6 +114,24 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
+
+        {/* CSS Animations */}
+        <style jsx>{`
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+          }
+        `}</style>
       </section>
 
       {/* Our Story Section */}
