@@ -147,7 +147,7 @@ export default function ContactForm() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
                   <a 
-                    href="mailto:info@myconsultantsandadvisors.com"
+                    href="mailto:myconsultantsandadvisors@gmail.com"
                     className="text-muted-foreground hover:text-accent transition-colors break-all"
                   >
                     myconsultantsandadvisors@gmail.com
